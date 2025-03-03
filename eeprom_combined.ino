@@ -21,9 +21,8 @@ void loop() {
   if (Serial.available()) {
     int input = Serial.parseInt();
     SetInt(0, 1, input);
-    
-    int newValue = GetInt(0, 1);
-    Serial.println(newValue);
-    delay(100);
   }
+  int newValue = GetInt(0, 1);
+  Serial.println(newValue);
+  delay(100);
 }
